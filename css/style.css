@@ -1,0 +1,626 @@
+.wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 0.5px solid #777;
+    padding: 0;
+}
+
+p {
+    /* padding: 0;
+    margin: 0; */
+    position: relative;
+}
+.text-center {
+    /* position: relative; */
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- ++++++++++ HEADER ++++++++++ ---------- */
+header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    color: #fff;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.logo-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+.page-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.page-txt::after {
+    content: '';
+    width: 65px;
+    height: 4px;
+    background-color: #f38181;
+    display: block;
+    margin: 35px auto;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.nav-item>a {
+    margin: 0 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav-item>a.active {
+    border-bottom: 3px solid #fce38a;
+    color: #fce38a;
+}
+.nav:last-child {
+    margin: 0;
+    padding: 0;
+}
+.header-mid{
+    text-align: center;
+}
+.hm-title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+        color: #fff;
+        line-height: 1;
+        z-index: 16;
+}
+.welcome {
+        font-size: 150px;
+        font-family: "Montserrat";
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.933;
+        z-index: 17;
+}
+.header-btm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    counter-reset: list;
+}
+.header-btm-item {
+    counter-increment: list;
+    width: 280px;
+}
+.header-btm-item>a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    color: #fff;
+
+}
+.header-btm-item::before {
+    content: "0"counter(list);
+    font-size: 24px;
+    font-family: "Montserrat";
+    margin-right: 7px;
+
+}
+
+
+/* ---------- ++++++++++ MAIN ++++++++++ ---------- */
+
+
+
+
+.page-title {
+        font-size: 24px;
+        font-family: "Kaushan Script";
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+        text-align: center;
+        z-index: 45;
+}
+
+.page-description {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(153, 153, 153);
+        line-height: 1.6;
+        text-align: center;
+        width: 952px;
+        height: 39px;
+        z-index: 48;
+}
+
+.page-block-01 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 0;
+
+}
+.page-block-01-item {
+    position: relative;
+    background-color: #95e1d3;
+        width: 380px;
+        height: 250px;
+        z-index: 64;
+
+        /* display: block;
+        overflow: hidden; */
+}
+.page-block-01-item>img {
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+
+
+}
+
+
+.img1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    
+}
+
+.cont02 {
+    overflow: hidden;
+}
+.img2 {
+    position: absolute;
+    top: -135px;
+
+}
+
+.statistic {
+    position: relative;
+    background-color: #95e1d3;
+    height: 270px;
+}
+.stat {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 85px 0;
+    
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+    text-align: center;
+    color: #fff;
+    border-left: 0.5px solid #b5eae0;
+}
+
+.stat:first-child {
+    border-left: none;
+}
+
+.stat-count {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.stat-name {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+
+/* ---------- ++++++++++ SERVICES ++++++++++ ---------- */
+.services-01 {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    /* display: grid; */
+    /* grid-template-rows: [row-1] 1fr [row-2] 1fr; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-gap: 0.1vw; */
+    /* list-style: none; */
+    padding: 40px 30px;
+}
+
+.services:first-child {
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1;
+}
+
+/* .row-1 {
+    border-bottom: 1px solid #000;
+} */
+
+.services-row {
+    display: flex;
+    flex-direction: row;
+    padding: 45px 0;
+    width: 100%;
+}
+
+.services-item {
+    width: 33.3333333%;
+    display: flex;
+    flex-direction: row;
+}
+
+.services-logo {
+    height: 100%;
+    width: min-content;
+    margin-right: 30px;
+}
+
+.services-text {
+    max-width: 280px;
+    /* margin-left: 50px; */
+}
+.services-title {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.services-descryption {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+/* ---------- ++++++++++ UNIQUE DESIGNG ++++++++++ ---------- */
+.unique-desing {
+    width: 100%;
+    background-image: url(../img/design-bg.png);
+    background-color: #d9d9d9;
+    max-height: 850px;
+    padding: 0;
+}
+.iphone {
+    position: relative;
+    width: 470px;
+    height: 575px;
+    margin: 0 auto;
+    
+}
+
+.iphone-big {
+    position: absolute;
+    bottom: 0;
+}
+
+.iphone-small {
+    position: absolute;
+    bottom: -52px;
+    right: -123px;
+}
+
+/* ---------- ++++++++++ Services ++++++++++ ---------- */
+.services-02 {
+    margin-top: 90px;
+}
+
+.serices-examples {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ---------- ++++++++++ MAPS ++++++++++ ---------- */
+
+/* ---------- ++++++++++ MAPS ++++++++++ ---------- */
+
+/* ---------- ++++++++++ MAPS ++++++++++ ---------- */
+
+/* ---------- ++++++++++ CLIENTS ++++++++++ ---------- */
+
+.clients {
+    background-image: url(../img/clients-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.clients-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items:center;
+    grid-template-columns: 50% 50%;
+
+}
+
+.clients-item {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+}
+
+.clients-description {
+    margin-left: 30px;
+}
+.clients-name {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: left;
+}
+
+.clients-profession {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(51, 51, 51);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.clients-profession::after {
+    content: '';
+    width: 65px;
+    height: 4px;
+    background-color: #f38181;
+    display: block;
+    margin-top: 25px;
+}
+
+.clients-comments {
+        font-size: 15px;
+        font-family: "Roboto";
+        color: rgb(153, 153, 153);
+        line-height: 1.6;
+        text-align: left;
+}
+  
+
+
+
+/* ---------- ++++++++++ BLOGS ++++++++++ ---------- */
+
+.blogs-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+/* .blogs-item {
+     max-width: %;
+} */
+
+.blogs-imgs {
+    position: relative;
+    width: 380px;
+    height: 240px;
+}
+.blogs-imgs-data {
+    background-color: rgb(149, 225, 211);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60px;
+    height: 70px;
+    bottom: 10px;
+    left: -10px;    
+    text-align: center;
+    /* padding: 5px 0; */
+    color: #fff;
+}
+.blogs-imgs-day {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+.blogs-imgs-mounth {
+    font-family: 'Roboto' sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+    /* line-height: 1.2; */
+    margin: 0;
+    padding: 0;
+
+}
+.blogs-item-text {
+    width: 100%;
+}
+.blogs-item-text-title {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.blogs-item-text-description {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+.blogs-item-bottom {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.view-count, .comments-count {
+    position: relative;
+    padding-left: 23px;
+    vertical-align: middle;
+    margin-right: 20px;
+        font-size: 15px;
+        font-family: "Roboto";
+        color: rgb(153, 153, 153);
+        font-style: italic;
+        line-height: 1.6;
+}
+.view-count::before, .comments-count::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 12px;
+    top: calc(50% - 6px);
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.view-count::before {
+    background-image: url(../img/VIEW.png);   
+}
+.comments-count::before {
+    background-image: url(../img/speech-buubles.png);   
+}
+
+
+/* ---------- ++++++++++ MAPS ++++++++++ ---------- */
+.maps {
+    background-image: url(../img/footer-maps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    margin: 65px 0;
+    color: #f38181;
+}
+.maps .wrapper {
+    text-align: center;
+    padding-top: 60px;
+    
+}
+.maps .wrapper img {
+    margin: 0 auto;
+}
+.maps .wrapper .page-txt {
+    font-size: 24px;
+}
+.maps .wrapper .page-txt::after {
+    content: '';
+    width: 65px;
+    height: 4px;
+    background-color: #f38181;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ---------- ++++++++++ FOOTER ++++++++++ ---------- */
+footer {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.ft-left {
+    max-width: 480px;
+}
+.ft-center {
+    max-width: 350px;
+}
+.ft-right {
+    max-width: 275px;
+}
+.footer-title {
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(204, 204, 204);
+        font-weight: bold;
+        line-height: 1.2;
+        /* -moz-transform: matrix( 2.58218770784548,0,0,2.58218770784548,0,0);
+        -webkit-transform: matrix( 2.58218770784548,0,0,2.58218770784548,0,0);
+        -ms-transform: matrix( 2.58218770784548,0,0,2.58218770784548,0,0);      */
+}
+.footer-top-tile {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;     
+}
+.follow-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.follow-us-services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.footer-blogs-item {
+    display: flex;
+    flex-direction: row;
+}
+.instagram-photo {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.1vw;
+    list-style: none;
+    padding: 0;
+}
